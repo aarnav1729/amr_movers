@@ -1,10 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Contact from '../components/Contact.astro';
+interface Props {
+}
+    
+    const {} = Astro.props;
+
 ---
 
-<Layout title="Welcome to Astro - Planetario template.">
-
-    <Contact/>
+<Layout title="AMR Movers.">     
+    <div class="relative isolate">
+        <!-- Keep the header intact and move the form below it -->
+        <div class="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 transform-gpu justify-center overflow-hidden blur-3xl sm:bottom-0 sm:right-[calc(50%-6rem)] sm:top-auto sm:translate-y-0 sm:transform-gpu sm:justify-end"
+             aria-hidden="true">
+            <div class="aspect-[1108/632] w-[69.25rem] flex-none bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-25"
+                 style="clip-path: polygon(73.6% 48.6%, 91.7% 88.5%, 100% 53.9%, 97.4% 18.1%, 92.5% 15.4%, 75.7% 36.3%, 55.3% 52.8%, 46.5% 50.9%, 45% 37.4%, 50.3% 13.1%, 21.3% 36.2%, 0.1% 0.1%, 5.4% 49.1%, 21.4% 36.4%, 58.9% 100%, 73.6% 48.6%)"></div>
+        </div>
+    
+        <!-- Full-width Tally form -->
+        <div class="w-full h-screen pt-24 lg:pt-32"> <!-- Adjust padding to account for the header -->
+            <iframe src="https://tally.so/r/wzraqa?" width="100%" height="100%" frameborder="0" title="Request a Quote" allowfullscreen></iframe>
+        </div>
+    </div>
+    
 
 </Layout>

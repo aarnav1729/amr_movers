@@ -5,44 +5,118 @@ interface Props {
     href: string;
 }
 
-const {href, title, body} = Astro.props;
+const { href, title, body } = Astro.props;
 ---
 
 <div class="bg-white">
     <div class="mx-auto max-w-7xl divide-y divide-gray-900/10 px-6 py-32 lg:px-8">
-        <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
+        <h2 class="text-5xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
 
         <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
-
             <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-                <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">
-                    Why don't scientists trust atoms?
+                <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-12 cursor-pointer flex items-center justify-between" data-faq>
+                    <span>How do I book a move with America’s Most Reliable Movers?</span>
+                    <span class="arrow">▼</span>
                 </dt>
-                <dd class="mt-4 lg:col-span-7 lg:mt-0">
+                <dd class="mt-4 lg:col-span-7 lg:mt-0 hidden">
                     <p class="text-base leading-7 text-gray-600">
-                        Because they make up everything!.
+                        Simply call us at 727-434-2278 or 813-293-6683 or fill out the Detailed Quote form on this website.
                     </p>
                 </dd>
             </div>
 
             <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-                <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">
-                    Did you hear about the mathematician who's afraid of negative numbers?
+                <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-12 cursor-pointer flex items-center justify-between" data-faq>
+                    <span>How soon before my move should I contact movers?</span>
+                    <span class="arrow">▼</span>
                 </dt>
-                <dd class="mt-4 lg:col-span-7 lg:mt-0">
+                <dd class="mt-4 lg:col-span-7 lg:mt-0 hidden">
                     <p class="text-base leading-7 text-gray-600">
-                        He'll stop at nothing to avoid them!
+                        As soon as you know your move date.
                     </p>
                 </dd>
             </div>
 
             <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-                <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">
-                    Why don't skeletons fight each other?
+                <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-12 cursor-pointer flex items-center justify-between" data-faq>
+                    <span>Do you charge extra for specialty or large items?</span>
+                    <span class="arrow">▼</span>
                 </dt>
-                <dd class="mt-4 lg:col-span-7 lg:mt-0">
+                <dd class="mt-4 lg:col-span-7 lg:mt-0 hidden">
                     <p class="text-base leading-7 text-gray-600">
-                        They don't have the guts..
+                        We do charge extra for items such as pianos, grandfather/grandmother clocks, safes, etc. We do not move pool tables.
+                    </p>
+                </dd>
+            </div>
+
+            <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+                <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-12 cursor-pointer flex items-center justify-between" data-faq>
+                    <span>My move date changed. What should I do?</span>
+                    <span class="arrow">▼</span>
+                </dt>
+                <dd class="mt-4 lg:col-span-7 lg:mt-0 hidden">
+                    <p class="text-base leading-7 text-gray-600">
+                        Contact us as soon as you can if your move date has changed.
+                    </p>
+                </dd>
+            </div>
+
+            <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+                <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-12 cursor-pointer flex items-center justify-between" data-faq>
+                    <span>What can not be moved on your trucks?</span>
+                    <span class="arrow">▼</span>
+                </dt>
+                <dd class="mt-4 lg:col-span-7 lg:mt-0 hidden">
+                    <p class="text-base leading-7 text-gray-600">
+                        By law, we can not transport hazardous materials such as gasoline, bottled gases, fireworks, cleaning fluids, matches, paint and other flammables such as guns, ammunition or explosives. We also cannot move animals. Plan ahead for these items.
+                    </p>
+                </dd>
+            </div>
+
+            <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+                <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-12 cursor-pointer flex items-center justify-between" data-faq>
+                    <span>Will you move my appliances?</span>
+                    <span class="arrow">▼</span>
+                </dt>
+                <dd class="mt-4 lg:col-span-7 lg:mt-0 hidden">
+                    <p class="text-base leading-7 text-gray-600">
+                        Please prepare your appliances for your move. They should be clean and dry. Pack all loose parts such as bins and shelves. Disconnect all water lines and gas lines. For washers, please secure the tub per the manufacturer’s manual to prevent swaying. We do not disconnect or reconnect appliances.
+                    </p>
+                </dd>
+            </div>
+
+            <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+                <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-12 cursor-pointer flex items-center justify-between" data-faq>
+                    <span>Are you licensed and insured?</span>
+                    <span class="arrow">▼</span>
+                </dt>
+                <dd class="mt-4 lg:col-span-7 lg:mt-0 hidden">
+                    <p class="text-base leading-7 text-gray-600">
+                        We are fully licensed and insured.
+                    </p>
+                </dd>
+            </div>
+
+            <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+                <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-12 cursor-pointer flex items-center justify-between" data-faq>
+                    <span>How do you charge?</span>
+                    <span class="arrow">▼</span>
+                </dt>
+                <dd class="mt-4 lg:col-span-7 lg:mt-0 hidden">
+                    <p class="text-base leading-7 text-gray-600">
+                        Our local moves are charged at an hourly rate.
+                    </p>
+                </dd>
+            </div>
+
+            <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+                <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-12 cursor-pointer flex items-center justify-between" data-faq>
+                    <span>Do you move customers on weekends?</span>
+                    <span class="arrow">▼</span>
+                </dt>
+                <dd class="mt-4 lg:col-span-7 lg:mt-0 hidden">
+                    <p class="text-base leading-7 text-gray-600">
+                        Yes, we move customers 7 days a week!
                     </p>
                 </dd>
             </div>
@@ -50,3 +124,15 @@ const {href, title, body} = Astro.props;
         </dl>
     </div>
 </div>
+
+<script client:load>
+    document.querySelectorAll("[data-faq]").forEach((faq) => {
+        faq.addEventListener("click", (event) => {
+            const faqAnswer = faq.nextElementSibling;
+            const arrow = faq.querySelector(".arrow");
+
+            faqAnswer.classList.toggle("hidden");
+            arrow.textContent = faqAnswer.classList.contains("hidden") ? "▼" : "▲";
+        });
+    });
+</script>
